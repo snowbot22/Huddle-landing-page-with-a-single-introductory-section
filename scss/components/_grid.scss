@@ -1,0 +1,16 @@
+/*
+*MIXIN GRID
+*/
+@mixin grid ($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+/*
+*GRID CENTER
+*/
+@mixin center {
+    display: grid;
+    place-content: center;
+}

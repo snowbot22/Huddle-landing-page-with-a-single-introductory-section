@@ -1,0 +1,59 @@
+/*
+*USE VAR AND FNCT AND GRID
+*/
+@use "../abstract/variables" as var;
+@use "../abstract/functions" as funct;
+@use "./grid" as grid;
+
+/*
+*MAIN BUTTON MOBILE
+*/
+@mixin btn-main {
+    background-color: white;
+    border: none;
+    font-family: var.$Body;
+    color: funct.colors(Violet);
+    width: 75%;
+    height: 35px;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    &:hover{
+        background-color: funct.colors(Soft-Magenta);
+        color: white;
+    }
+}
+
+/*
+*MAIN BUTTON DESKTOP
+*/
+@mixin btn-main-desktop {
+    background-color: white;
+    border: none;
+    font-family: var.$Body;
+    color: funct.colors(Violet);
+    width: 75%;
+    height: 40px;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+    &:hover{
+        background-color: funct.colors(Soft-Magenta);
+        color: white;
+    }
+}
+
+
+/*
+*FOOTER BUTTONS
+*/
+@mixin btn-footer  {
+    @include grid.center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
+    color: white;
+    &:hover{
+        border-color: funct.colors(Soft-Magenta);
+        color: funct.colors(Soft-Magenta);
+    }
+}

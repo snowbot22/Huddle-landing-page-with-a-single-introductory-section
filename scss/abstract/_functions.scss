@@ -1,0 +1,12 @@
+/*
+* USE VARIABLES
+*/
+@use "./variables" as var;
+
+
+/*
+*COLORS FUNCTION
+*/
+@function colors ($selection){
+    @return map-get($map: var.$colors, $key:$selection )
+}
